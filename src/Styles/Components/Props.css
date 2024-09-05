@@ -1,0 +1,14 @@
+.container-props {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 90px;
+    background: #0033a0;
+    border-radius: 5px;
+}
+.container-props p {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fff;
+}

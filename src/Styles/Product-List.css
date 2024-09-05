@@ -1,0 +1,54 @@
+.Product-List-Container {
+    height: 100vh;
+    width: 65%;
+    /* background-color: antiquewhite; */
+    margin: auto;
+}
+
+.Left-Product-List-Container {
+    height: auto;
+}
+.Tl1-LPLC {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.Tl1-Container-LPLC button {
+    color: #000;
+}
+
+.Tl1-Container-LPLC button.selected {
+    color: #0033a0; /* Màu chữ khi được chọn */
+}
+
+.checkbox-container {
+    margin-top: 20px;
+}
+
+.checkbox-item {
+    margin-bottom: 10px;
+}
+
+.checkbox-item label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+.Right-Product-List-Container {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.Right-Product-List-Container .product-card {
+    height: 18rem;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 16px;
+}

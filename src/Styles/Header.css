@@ -1,0 +1,165 @@
+.header {
+    background: var(--primary-color);
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    z-index: 10;
+}
+
+.logo {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 12rem;
+}
+
+.search-wrapper {
+    flex: 1;
+    height: 3.5rem;
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.search-input {
+    flex: 1;
+    color: black;
+    padding-left: 1rem;
+    border-radius: 9999px; /* full-rounded */
+    border: 1px solid transparent;
+    transition: border-radius 0.2s;
+}
+
+.search-input.focused {
+    border-radius: 0.25rem;
+}
+
+.search-button {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    background-color: #0033a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #0025a0;
+}
+
+.clear-button {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-nav {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-button {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-button .cart-count {
+    position: absolute;
+    bottom: 60%;
+    left: 60%;
+    background-color: #f3c10d;
+    color: #2e2f32;
+    border-radius: 9999px;
+    min-width: 1rem;
+    min-height: 1rem;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-links ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.auth-links li {
+    margin-left: 1rem;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    overflow: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    margin-top: 5.5rem;
+}
+
+.flex-auto.mb-4.sticky.top-0 {
+    z-index: 1;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Hiển thị sidebar khi mở */
+}

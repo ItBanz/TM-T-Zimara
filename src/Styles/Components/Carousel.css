@@ -1,0 +1,63 @@
+.Deal-container {
+    padding-top: 50px;
+}
+.title-deal {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.title-deal-container {
+    width: 65%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 10px; /* Optional: Add some horizontal padding */
+}
+
+.slick-slide {
+    padding: 0 2px; /* Adjust the horizontal spacing between slides */
+}
+
+.slide-card-container {
+    width: 65%;
+    margin: auto;
+    padding: 0 10px; /* Horizontal padding for the container */
+}
+
+.slide-card {
+    width: 200px;
+    height: 300px; /* Fixed height for card */
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding does not affect overall size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.title-deal h4 {
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.slide-card h3 {
+    margin: 0;
+    font-size: 1.2rem; /* Responsive font size */
+}
+
+.slide-card p {
+    margin: 0;
+    font-size: 1rem; /* Responsive font size */
+}

@@ -1,0 +1,23 @@
+.Mall-Contract {
+    width: 100%;
+    height: 545px;
+    display: flex;
+    justify-content: center;
+}
+
+.Mall-Container {
+    height: 545px;
+    width: 80%;
+}
+
+.LeftM-container {
+    background-color: #faebd7;
+}
+
+img.slide-card-image-Mall-L {
+    width: 100%;
+}
+
+.RightM-container {
+    background-color: aqua;
+}

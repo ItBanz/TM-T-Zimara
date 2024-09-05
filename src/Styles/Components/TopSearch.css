@@ -1,0 +1,79 @@
+.TopSearch {
+    padding-top: 50px;
+}
+.title-TopSearch {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.title-TopSearch-container {
+    width: 65%;
+    display: flex;
+    margin: 0 auto; /* Optional: Add some horizontal padding */
+}
+.title-TopSearch-container h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.slick-slide {
+    padding: 0 2px; /* Adjust the horizontal spacing between slides */
+}
+
+.slide-card-container {
+    width: 65%;
+    margin: auto;
+    /* Horizontal padding for the container */
+}
+
+.slide-card-TopSearch {
+    width: 200px;
+    height: 300px; /* Fixed height for card */
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding does not affect overall size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide-card-image {
+    width: 100%;
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.image-site {
+    padding: 20px;
+}
+
+.title-deal h4 {
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.slide-card-TopSearch h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem; /* Responsive font size */
+    background-color: #bebebe;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.slide-card-TopSearch p {
+    margin: 0;
+    font-size: 1rem; /* Responsive font size */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
