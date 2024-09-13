@@ -1,0 +1,61 @@
+.discount-code-shop {
+    width: 260px;
+    padding: 12px;
+    background-color: #c5d5f8;
+    border: 1px solid #0033a0;
+    border-radius: 8px;
+    position: relative;
+    color: #0033a0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discount-code-shop::before,
+.discount-code-shop::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #c5d5f8;
+    border-top: 1px dashed #0033a0;
+    border-bottom: 1px dashed #0033a0;
+}
+
+.discount-code-shop::before {
+    top: 0;
+    left: 0;
+}
+
+.discount-code-shop::after {
+    bottom: 0;
+    left: 0;
+}
+
+.discount-code-shop h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.discount-code-shop p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.discount-code-shop strong {
+    font-weight: bold;
+}
+
+.discount-code-shop button {
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-end;
+    margin-top: 8px;
+}
+.left-discount-code-shop p {
+    right: 0;
+}

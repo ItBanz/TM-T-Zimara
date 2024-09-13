@@ -1,0 +1,222 @@
+{
+    "id": "1",
+    "sName": "Fuzzy Sneaker",
+    "logo": "https://down-vn.img.susercontent.com/file/3b87d408bbcbe092ab38ad2c14c6e6c3_tn",
+    "rating": "14.9",
+    "product": "82",
+    "responseRate": "95%",
+    "joinTime": "16 tháng trước",
+    "followers": "81.5k",
+
+    "categories": [
+        {
+            "id": "1",
+            "name": "Zimara",
+            "subcategories": [
+                {
+                    "id": "subcat1",
+                    "name": "Giày Dép Nam"
+                },
+                {
+                    "id": "subcat2",
+                    "name": "Giày Thể Thao/Sneakers"
+                }
+            ]
+        }
+    ],
+    "promotionalQuantity": "360",
+    "remainingStock": "70828",
+    "shippingFrom": "Hà Nội",
+
+    "products": [
+        {
+            "id-product": 1,
+            "title-product": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+            "name": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+            "image-product": [
+                "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk05gbfc1_tn",
+                "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk06v2x1f_tn",
+                "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk0kwkbb1_tn",
+                "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk089nd14_tn",
+                "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lx2rxar1bj6he7_tn"
+            ],
+            "rate": 4.5,
+            "evaluate": "1,7 Đánh Giá",
+            "selling": "8,7K lượt bán",
+            "discountCodes": ["Giảm 5k", "Giảm 10k", "Giảm 50k", "Giảm 100k"],
+            "colorOptions": [
+                {
+                    "color": "Cream",
+                    "price": "3.000.000",
+                    "pricediscount": "1.030.000",
+                    "sizes": [
+                        { "size": "36", "quality": 20 },
+                        { "size": "37", "quality": 100 },
+                        { "size": "38", "quality": 21 }
+                    ]
+                },
+                {
+                    "color": "Cream Black",
+                    "price": "2.100.000",
+                    "pricediscount": "1.130.000",
+                    "sizes": [
+                        { "size": "36.5", "quality": 200 },
+                        { "size": "37.5", "quality": 100 },
+                        { "size": "38.5", "quality": 210 }
+                    ]
+                },
+                {
+                    "color": "Birch Green",
+                    "price": "2.200.000",
+                    "pricediscount": "1.230.000",
+                    "sizes": [
+                        { "size": "39", "quality": 300 },
+                        { "size": "40", "quality": 400 },
+                        { "size": "41", "quality": 510 }
+                    ]
+                },
+                {
+                    "color": "Blue",
+                    "price": "2.400.000",
+                    "pricediscount": "1.430.000",
+                    "sizes": [
+                        { "size": "36", "quality": 300 },
+                        { "size": "37", "quality": 400 },
+                        { "size": "38", "quality": 510 },
+                        { "size": "39", "quality": 110 }
+                    ]
+                },
+                {
+                    "color": "Green",
+                    "price": "2.500.000",
+                    "pricediscount": "1.530.000",
+                    "sizes": [
+                        { "size": "36", "quality": 300 },
+                        { "size": "37", "quality": 400 },
+                        { "size": "38", "quality": 510 },
+                        { "size": "39", "quality": 110 },
+                        { "size": "40", "quality": 310 },
+                        { "size": "41", "quality": 210 }
+                    ]
+                }
+            ],
+            "description": [
+                "Chào mừng bạn đến vơi FUZZY Shop",
+                "Cam Kết:-- Đồng kiểm khi nhận hàng -- Đổi trả (sản phẩm còn nguyên tem, tag, box, chưa qua sử dụng).",
+                "-- Chọn size quý khách vui lòng đi đúng size, tăng lên 1 size so với size giày bth khi ( chân to ngang hoặc mu chân dày)",
+                "-- Đa dạng mẫu mã, giá SALE RẺ nhất thị trường. Full box, tem, tag, giấy gói.",
+                "-- Màu sản phẩm có thể sẽ chênh lệch thực tế một phần nhỏ, do ảnh hưởng về độ lệch màu của ánh sáng nhưng vẫn đảm bảo chất lượng.",
+                "-- Cam kết chất lượng, hoàn tiền 100% khi không hài lòng về sản phẩm.",
+                "-- Thời gian vận chuyển 3-5 ngày.",
+                "Thông tin sản phẩm",
+                "✪ Chất Liệu Upper: Da Lộn",
+                "✪ Chất Liệu Đế: Cao Su",
+                "✪ Kiểu Dáng : Cổ Thấp ( Low)",
+                "✪ Tình Trạng: Mới 100% Fullbox",
+                "𝐇𝐮̛𝐨̛́𝐧𝐠 𝐃𝐚̂̃𝐧 𝐒𝐮̛̉ 𝐃𝐮̣𝐧𝐠 : -",
+                "⛔ Không dùng hóa chất hay bột giặt có hoạt tính tẩy rửa mạnh ",
+                "⛔ Không dùng bàn chải cứng để vệ sinh giày sẽ làm hư",
+                "⛔ Không đi mưa ngâm nước lâu, không phơi giày trực tiếp dưới ngoài trời nắng gắt",
+                "⛔Với các sàn phẩm sáng màu, nên vệ sinh thường xuyên",
+                "⛔ Tránh cất giữ giày khi còn ướt, ẩm..",
+                "1. Điều kiện đổi trả sản phẩm:",
+                "- Sản phẩm mới 100%.",
+                "- Sản phẩm còn nguyên tag, tem mác và túi zip",
+                "Nếu sản phẩm không đúng quy định đổi trả, Shop xin phép không nhận.",
+                "- Trường hợp sản phẩm hết size cần đổi thì khách đổi sang màu khác hoặc mẫu khác có giá bằng hoặc cao hơn",
+                "2. Phí ship:",
+                "- Phí ship đổi trả size khách thanh toán giúp Shop.",
+                "- Phí ship đổi trả sản phẩm lỗi, Shop sẽ thanh toán.",
+                "✅Hãy LIÊN HỆ VỚI CHÚNG TÔI. Chúng tôi sẽ tận tình giúp bạn giải quyết các vấn đề về thông tin sản phẩm và những thông tin khác ❌ ",
+                "XIN đừng vội đánh giá 1 sao hãy LIÊN HỆ với SHOP qua kênh chat hoặc liên hệ qua số hotline trên đơn hàng, chúng tôi CAM KẾT phục vụ quý khách đến khi HÀI LÒNG 24/7"
+            ],
+            "comment": [
+                {
+                    "id": "1233",
+                    "username": "lekhanggpn50121",
+                    "content": "Sản phẩm y hình. Hộp nguyên vẹn không méo mó. Shop nhiệt tình. Em rất hài lòng về sản phẩm. Sẽ ủng hộ shop lần sau.",
+                    "date": "2024-07-13 00:51",
+                    "ratingcomment": 4,
+                    "images-comment": [
+                        "https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp",
+                        "https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3pe1957e.webp",
+                        "https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3pfftlda.webp"
+                    ],
+                    "sellerfeedback": "Cảm ơn bạn rất nhiều vì đã dành cho chúng tôi 5 sao! Chúng tôi rất vui khi biết rằng bạn hài lòng với sản phẩm của mình. Mong sớm được phục vụ bạn lần nữa!"
+                },
+                {
+                    "id": "1234",
+                    "username": "thuongnhan123",
+                    "content": "Giày đẹp và chất lượng tốt. Tuy nhiên, thời gian giao hàng hơi lâu một chút. Nhưng overall là hài lòng với sản phẩm và dịch vụ của shop.",
+                    "date": "2024-07-20 15:22",
+                    "ratingcomment": 4,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã phản hồi. Chúng tôi xin lỗi về sự chậm trễ trong giao hàng và sẽ cải thiện dịch vụ của mình. Rất vui khi bạn hài lòng với sản phẩm!"
+                },
+                {
+                    "id": "1235",
+                    "username": "minhchau123",
+                    "content": "Sản phẩm đúng như mô tả. Rất hài lòng với chất lượng và màu sắc của giày. Shop có dịch vụ khách hàng tốt.",
+                    "date": "2024-08-01 10:15",
+                    "ratingcomment": 5,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã dành thời gian để đánh giá và chia sẻ trải nghiệm của mình. Chúng tôi rất vui khi bạn hài lòng với sản phẩm và dịch vụ!"
+                },
+                {
+                    "id": "1236",
+                    "username": "nguyenbichthuy",
+                    "content": "Hơi thất vọng vì sản phẩm không đúng kích thước như mô tả. Dịch vụ khách hàng của shop rất tốt và nhanh chóng xử lý vấn đề.",
+                    "date": "2024-08-10 20:45",
+                    "ratingcomment": 3,
+                    "images-comment": [],
+                    "sellerfeedback": "Chúng tôi xin lỗi vì sự bất tiện về kích thước sản phẩm. Chúng tôi sẽ xem xét lại mô tả và cải thiện để tránh những vấn đề như vậy trong tương lai."
+                },
+                {
+                    "id": "1237",
+                    "username": "hoangtuong123",
+                    "content": "Giày chất lượng cao, rất thoải mái khi đi. Tuy nhiên, giá cả có hơi cao một chút so với mặt bằng chung.",
+                    "date": "2024-08-15 14:30",
+                    "ratingcomment": 4,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã phản hồi. Chúng tôi luôn cố gắng cung cấp sản phẩm chất lượng tốt nhất. Hy vọng bạn sẽ tiếp tục ủng hộ chúng tôi!"
+                },
+                {
+                    "id": "1238",
+                    "username": "thuongnhan123",
+                    "content": "Giày đẹp và chất lượng tốt. Tuy nhiên, thời gian giao hàng hơi lâu một chút. Nhưng overall là hài lòng với sản phẩm và dịch vụ của shop.",
+                    "date": "2024-07-20 15:22",
+                    "ratingcomment": 4,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã phản hồi. Chúng tôi xin lỗi về sự chậm trễ trong giao hàng và sẽ cải thiện dịch vụ của mình. Rất vui khi bạn hài lòng với sản phẩm!"
+                },
+                {
+                    "id": "1239",
+                    "username": "minhchau123",
+                    "content": "Sản phẩm đúng như mô tả. Rất hài lòng với chất lượng và màu sắc của giày. Shop có dịch vụ khách hàng tốt.",
+                    "date": "2024-08-01 10:15",
+                    "ratingcomment": 5,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã dành thời gian để đánh giá và chia sẻ trải nghiệm của mình. Chúng tôi rất vui khi bạn hài lòng với sản phẩm và dịch vụ!"
+                },
+                {
+                    "id": "1240",
+                    "username": "nguyenbichthuy",
+                    "content": "Hơi thất vọng vì sản phẩm không đúng kích thước như mô tả. Dịch vụ khách hàng của shop rất tốt và nhanh chóng xử lý vấn đề.",
+                    "date": "2024-08-10 20:45",
+                    "ratingcomment": 3,
+                    "images-comment": [],
+                    "sellerfeedback": "Chúng tôi xin lỗi vì sự bất tiện về kích thước sản phẩm. Chúng tôi sẽ xem xét lại mô tả và cải thiện để tránh những vấn đề như vậy trong tương lai."
+                },
+                {
+                    "id": "1241",
+                    "username": "hoangtuong123",
+                    "content": "Giày chất lượng cao, rất thoải mái khi đi. Tuy nhiên, giá cả có hơi cao một chút so với mặt bằng chung.",
+                    "date": "2024-08-15 14:30",
+                    "ratingcomment": 4,
+                    "images-comment": ["https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"],
+                    "sellerfeedback": "Cảm ơn bạn đã phản hồi. Chúng tôi luôn cố gắng cung cấp sản phẩm chất lượng tốt nhất. Hy vọng bạn sẽ tiếp tục ủng hộ chúng tôi!"
+                }
+            ]
+        }
+    ]
+}

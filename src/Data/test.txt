@@ -1,0 +1,65 @@
+const { id } = useParams();
+    const product = productData.find((p) => p.id === parseInt(id!));
+
+    if (!product) {
+        return <div>Product not found</div>;
+    }
+
+    const [selectedColor, setSelectedColor] = useState<ColorOption>(product.colorOptions[0]);
+    const [selectedSize, setSelectedSize] = useState<string>(selectedColor.sizes[0].size);
+    const [quantity, setQuantity] = useState<number>(1);
+
+    const price = parseInt(selectedColor.price.replace(/\./g, ''));
+    const pricediscount = parseInt(selectedColor.pricediscount.replace(/\./g, ''));
+
+    const handleColorChange = (color: string) => {
+        const newColorOption = product.colorOptions.find((option) => option.color === color);
+        if (newColorOption) {
+            setSelectedColor(newColorOption);
+            setSelectedSize(newColorOption.sizes[0].size); // Reset size when color changes
+            setQuantity(1); // Reset quantity when color changes
+        }
+    };
+
+    const handleSizeChange = (size: string) => {
+        setSelectedSize(size);
+    };
+
+    const increaseQuantity = () => {
+        const sizeQuantity = selectedColor.sizes.find((s) => s.size === selectedSize)?.quantity || 0;
+        if (quantity < sizeQuantity) {
+            setQuantity(quantity + 1);
+        }
+    };
+
+    const decreaseQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
+
+    const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const trimmedValue = event.target.value.replace(/^0+/, '');
+        const value = trimmedValue === '' ? 0 : parseInt(trimmedValue, 10);
+
+        const sizeQuantity = selectedColor.sizes.find((s) => s.size === selectedSize)?.quantity || 0;
+        if (value >= 0 && value <= sizeQuantity) {
+            setQuantity(value);
+        } else if (value > sizeQuantity) {
+            setQuantity(sizeQuantity);
+        }
+    };
+
+    const rating = parseFloat(product.rate);
+
+    const commentsPerPage = 3; // Số lượng bình luận mỗi trang
+    const [currentPage, setCurrentPage] = useState<number>(1);
+
+    const paginateComments = (comments: Comment[], page: number, perPage: number) => {
+        const startIndex = (page - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        return comments.slice(startIndex, endIndex);
+    };
+
+    const totalPages = Math.ceil(product.comments.length / commentsPerPage);
+    const currentComments = paginateComments(product.comments, currentPage, commentsPerPage);

@@ -4,9 +4,9 @@ import Header from '../Components/Header';
 import ThumbnailGallery from '../Components/ThumbnailGallery';
 import PercentageCalculator from '../Components/Props';
 import StarRating from '../Components/StarRating';
-import ProductList from '../Components/ProductList';
+// import ProductList from '../Components/ProductList';
 
-import '../Styles/ProductDetail.css';
+import '../Styles//Pages/ProductDetail.css';
 
 interface ColorOption {
     color: string;
@@ -206,9 +206,7 @@ const productData: Product[] = [
                     'Giày đẹp và chất lượng tốt. Tuy nhiên, thời gian giao hàng hơi lâu một chút. Nhưng overall là hài lòng với sản phẩm và dịch vụ của shop.',
                 date: '2024-07-20 15:22',
                 ratingcomment: 4,
-                images: [
-                    'https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp',
-                ],
+                images: ['https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp'],
                 sellerfeedback:
                     'Cảm ơn bạn đã phản hồi. Chúng tôi xin lỗi về sự chậm trễ trong giao hàng và sẽ cải thiện dịch vụ của mình. Rất vui khi bạn hài lòng với sản phẩm!',
             },
@@ -219,9 +217,7 @@ const productData: Product[] = [
                     'Sản phẩm đúng như mô tả. Rất hài lòng với chất lượng và màu sắc của giày. Shop có dịch vụ khách hàng tốt.',
                 date: '2024-08-01 10:15',
                 ratingcomment: 5,
-                images: [
-                    'https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp',
-                ],
+                images: ['https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp'],
                 sellerfeedback:
                     'Cảm ơn bạn đã dành thời gian để đánh giá và chia sẻ trải nghiệm của mình. Chúng tôi rất vui khi bạn hài lòng với sản phẩm và dịch vụ!',
             },
@@ -243,9 +239,7 @@ const productData: Product[] = [
                     'Giày chất lượng cao, rất thoải mái khi đi. Tuy nhiên, giá cả có hơi cao một chút so với mặt bằng chung.',
                 date: '2024-08-15 14:30',
                 ratingcomment: 4,
-                images: [
-                    'https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp',
-                ],
+                images: ['https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp'],
                 sellerfeedback:
                     'Cảm ơn bạn đã phản hồi. Chúng tôi luôn cố gắng cung cấp sản phẩm chất lượng tốt nhất. Hy vọng bạn sẽ tiếp tục ủng hộ chúng tôi!',
             },
@@ -256,9 +250,7 @@ const productData: Product[] = [
                     'Giày chất lượng cao, rất thoải mái khi đi. Tuy nhiên, giá cả có hơi cao một chút so với mặt bằng chung.',
                 date: '2024-08-15 14:30',
                 ratingcomment: 4,
-                images: [
-                    'https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp',
-                ],
+                images: ['https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp'],
                 sellerfeedback:
                     'Cảm ơn bạn đã phản hồi. Chúng tôi luôn cố gắng cung cấp sản phẩm chất lượng tốt nhất. Hy vọng bạn sẽ tiếp tục ủng hộ chúng tôi!',
             },
@@ -266,7 +258,31 @@ const productData: Product[] = [
     },
 ];
 
-const discountCodes = ['Giảm 5k', 'Giảm ₫10k', 'Giảm ₫50k', 'Giảm ₫100k'];
+const discountCodes: {
+    'id-discountCodes': string;
+    'name-discountCodes': string;
+    'condition-discountCodes': string;
+    'date-discountCodes': string;
+    'quality-discountCodes': string;
+    'value-discountCodes': string;
+}[] = [
+    {
+        'id-discountCodes': '5',
+        'name-discountCodes': 'Giảm 5k',
+        'condition-discountCodes': 'Đơn hàng tối thiểu 500k',
+        'date-discountCodes': '30/09/2024',
+        'quality-discountCodes': '5',
+        'value-discountCodes': '5,000',
+    },
+    {
+        'id-discountCodes': '10',
+        'name-discountCodes': 'Giảm 10k',
+        'condition-discountCodes': 'Đơn hàng tối thiểu 1000k',
+        'date-discountCodes': '30/09/2024',
+        'quality-discountCodes': '5',
+        'value-discountCodes': '10,000',
+    },
+];
 
 const ProductDetail: React.FC = () => {
     const { id } = useParams();
@@ -276,23 +292,15 @@ const ProductDetail: React.FC = () => {
         return <div>Product not found</div>;
     }
 
-    const [selectedColor, setSelectedColor] = useState<ColorOption>(
-        product.colorOptions[0],
-    );
-    const [selectedSize, setSelectedSize] = useState<string>(
-        selectedColor.sizes[0].size,
-    );
+    const [selectedColor, setSelectedColor] = useState<ColorOption>(product.colorOptions[0]);
+    const [selectedSize, setSelectedSize] = useState<string>(selectedColor.sizes[0].size);
     const [quantity, setQuantity] = useState<number>(1);
 
     const price = parseInt(selectedColor.price.replace(/\./g, ''));
-    const pricediscount = parseInt(
-        selectedColor.pricediscount.replace(/\./g, ''),
-    );
+    const pricediscount = parseInt(selectedColor.pricediscount.replace(/\./g, ''));
 
     const handleColorChange = (color: string) => {
-        const newColorOption = product.colorOptions.find(
-            (option) => option.color === color,
-        );
+        const newColorOption = product.colorOptions.find((option) => option.color === color);
         if (newColorOption) {
             setSelectedColor(newColorOption);
             setSelectedSize(newColorOption.sizes[0].size); // Reset size when color changes
@@ -305,9 +313,7 @@ const ProductDetail: React.FC = () => {
     };
 
     const increaseQuantity = () => {
-        const sizeQuantity =
-            selectedColor.sizes.find((s) => s.size === selectedSize)
-                ?.quantity || 0;
+        const sizeQuantity = selectedColor.sizes.find((s) => s.size === selectedSize)?.quantity || 0;
         if (quantity < sizeQuantity) {
             setQuantity(quantity + 1);
         }
@@ -319,15 +325,11 @@ const ProductDetail: React.FC = () => {
         }
     };
 
-    const handleQuantityChange = (
-        event: React.ChangeEvent<HTMLInputElement>,
-    ) => {
+    const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const trimmedValue = event.target.value.replace(/^0+/, '');
         const value = trimmedValue === '' ? 0 : parseInt(trimmedValue, 10);
 
-        const sizeQuantity =
-            selectedColor.sizes.find((s) => s.size === selectedSize)
-                ?.quantity || 0;
+        const sizeQuantity = selectedColor.sizes.find((s) => s.size === selectedSize)?.quantity || 0;
         if (value >= 0 && value <= sizeQuantity) {
             setQuantity(value);
         } else if (value > sizeQuantity) {
@@ -340,22 +342,14 @@ const ProductDetail: React.FC = () => {
     const commentsPerPage = 3; // Số lượng bình luận mỗi trang
     const [currentPage, setCurrentPage] = useState<number>(1);
 
-    const paginateComments = (
-        comments: Comment[],
-        page: number,
-        perPage: number,
-    ) => {
+    const paginateComments = (comments: Comment[], page: number, perPage: number) => {
         const startIndex = (page - 1) * perPage;
         const endIndex = startIndex + perPage;
         return comments.slice(startIndex, endIndex);
     };
 
     const totalPages = Math.ceil(product.comments.length / commentsPerPage);
-    const currentComments = paginateComments(
-        product.comments,
-        currentPage,
-        commentsPerPage,
-    );
+    const currentComments = paginateComments(product.comments, currentPage, commentsPerPage);
 
     return (
         <>
@@ -375,43 +369,29 @@ const ProductDetail: React.FC = () => {
                                 </p>
                             </div>
                             <div className="col ps-4 RES-container">
-                                <p className="product-detail-description">
-                                    {product.evaluate}
-                                </p>
+                                <p className="product-detail-description">{product.evaluate}</p>
                             </div>
                             <div className="col ps-4 RES-container">
-                                <p className="product-detail-description">
-                                    {product.selling}
-                                </p>
+                                <p className="product-detail-description">{product.selling}</p>
                             </div>
                         </div>
                         <div className="row price-productdetail">
                             <div className="col-md-auto price-nm">
-                                <p className="product-detail-price">
-                                    {selectedColor.price} VNĐ
-                                </p>
+                                <p className="product-detail-price">{selectedColor.price} VNĐ</p>
                             </div>
                             <div className="col price-ds">
-                                <p className="product-detail-price-discound">
-                                    {selectedColor.pricediscount} VNĐ
-                                </p>
+                                <p className="product-detail-price-discound">{selectedColor.pricediscount} VNĐ</p>
                             </div>
                             <div className="col col-lg-2 Propys">
-                                <PercentageCalculator
-                                    number1={pricediscount}
-                                    number2={price}
-                                />
+                                <PercentageCalculator number1={pricediscount} number2={price} />
                             </div>
                         </div>
                         <div className="discount-codes-container">
                             <p>Mã Giảm Giá Của Shop</p>
                             <div className="discount-codes">
                                 {discountCodes.map((code, index) => (
-                                    <button
-                                        key={index}
-                                        className="discount-code"
-                                    >
-                                        {code}
+                                    <button key={index} className="discount-code">
+                                        {code['name-discountCodes']}
                                     </button>
                                 ))}
                             </div>
@@ -421,14 +401,8 @@ const ProductDetail: React.FC = () => {
                             {product.colorOptions.map((option) => (
                                 <button
                                     key={option.color}
-                                    onClick={() =>
-                                        handleColorChange(option.color)
-                                    }
-                                    className={
-                                        selectedColor.color === option.color
-                                            ? 'selected'
-                                            : ''
-                                    }
+                                    onClick={() => handleColorChange(option.color)}
+                                    className={selectedColor.color === option.color ? 'selected' : ''}
                                 >
                                     {option.color}
                                 </button>
@@ -440,14 +414,8 @@ const ProductDetail: React.FC = () => {
                                 {selectedColor.sizes.map((size) => (
                                     <button
                                         key={size.size}
-                                        onClick={() =>
-                                            handleSizeChange(size.size)
-                                        }
-                                        className={
-                                            selectedSize === size.size
-                                                ? 'selected'
-                                                : ''
-                                        }
+                                        onClick={() => handleSizeChange(size.size)}
+                                        className={selectedSize === size.size ? 'selected' : ''}
                                     >
                                         {size.size}
                                     </button>
@@ -465,11 +433,7 @@ const ProductDetail: React.FC = () => {
                                     value={quantity}
                                     onChange={handleQuantityChange}
                                     min="1"
-                                    max={
-                                        selectedColor.sizes.find(
-                                            (s) => s.size === selectedSize,
-                                        )?.quantity || 0
-                                    }
+                                    max={selectedColor.sizes.find((s) => s.size === selectedSize)?.quantity || 0}
                                 />
                                 <button onClick={increaseQuantity}>+</button>
                             </div>
@@ -481,12 +445,9 @@ const ProductDetail: React.FC = () => {
                         </div>
                         <div className="button-container-productdetail">
                             <button className="add-to-cart-button-productdetail">
-                                <i className="fas fa-shopping-cart"></i> Thêm
-                                Vào Giỏ Hàng
+                                <i className="fas fa-shopping-cart"></i> Thêm Vào Giỏ Hàng
                             </button>
-                            <button className="buy-now-button-productdetail">
-                                Mua Ngay
-                            </button>
+                            <button className="buy-now-button-productdetail">Mua Ngay</button>
                         </div>
                     </div>
                 </div>
@@ -495,24 +456,16 @@ const ProductDetail: React.FC = () => {
                 <div className="col-4 Logo-Shop-Product-Detail">
                     <div className="row">
                         <div className="col-5 LSPD-Left">
-                            <img
-                                src={product.shop?.logo}
-                                alt="Logo Shop"
-                                className="shop-logo"
-                            />
+                            <img src={product.shop?.logo} alt="Logo Shop" className="shop-logo" />
                         </div>
                         <div className="col-7 LSPD-Right">
                             <h3 className="pb-2">{product.shop?.name}</h3>
                             <div className="row BTN-LSPD">
                                 <div className="col">
-                                    <button className="chat-now-button">
-                                        Chat Ngay
-                                    </button>
+                                    <button className="chat-now-button">Chat Ngay</button>
                                 </div>
                                 <div className="col">
-                                    <button className="view-shop-button">
-                                        Xem Shop
-                                    </button>
+                                    <button className="view-shop-button">Xem Shop</button>
                                 </div>
                             </div>
                         </div>
@@ -568,28 +521,18 @@ const ProductDetail: React.FC = () => {
                             </div>
                             <div className="noidung-chitietsanpham">
                                 <p className="row pb-3 NDCTSP">
-                                    <span className="col-4 PNDCTSP">
-                                        Danh Mục:{' '}
-                                    </span>{' '}
-                                    {product.category}
+                                    <span className="col-4 PNDCTSP">Danh Mục: </span> {product.category}
                                 </p>
                                 <p className="row pb-3 NDCTSP">
-                                    <span className="col-4 PNDCTSP">
-                                        Số lượng hàng khuyến mãi:{' '}
-                                    </span>{' '}
+                                    <span className="col-4 PNDCTSP">Số lượng hàng khuyến mãi: </span>{' '}
                                     {product.promotionalQuantity}
                                 </p>
                                 <p className="row pb-3 NDCTSP">
-                                    <span className="col-4 PNDCTSP">
-                                        Số sản phẩm còn lại:{' '}
-                                    </span>{' '}
+                                    <span className="col-4 PNDCTSP">Số sản phẩm còn lại: </span>{' '}
                                     {product.remainingStock}
                                 </p>
                                 <p className="row pb-3 NDCTSP">
-                                    <span className="col-4 PNDCTSP">
-                                        Gửi từ:{' '}
-                                    </span>{' '}
-                                    {product.shippingFrom}
+                                    <span className="col-4 PNDCTSP">Gửi từ: </span> {product.shippingFrom}
                                 </p>
                             </div>
                         </div>
@@ -600,11 +543,9 @@ const ProductDetail: React.FC = () => {
                             <div className="noidung-motasanpham">
                                 {product.description.length > 0 ? (
                                     <ul>
-                                        {product.description.map(
-                                            (desc, index) => (
-                                                <li key={index}>{desc}</li>
-                                            ),
-                                        )}
+                                        {product.description.map((desc, index) => (
+                                            <li key={index}>{desc}</li>
+                                        ))}
                                     </ul>
                                 ) : (
                                     <p>Chưa có mô tả cho sản phẩm.</p>
@@ -622,8 +563,7 @@ const ProductDetail: React.FC = () => {
                 {currentComments.map((comment) => (
                     <div key={comment.id} className="comment-section">
                         <div className="pt-4 px-4 comment-header">
-                            <strong>{comment.username}</strong> -{' '}
-                            <span>{comment.date}</span>
+                            <strong>{comment.username}</strong> - <span>{comment.date}</span>
                             <div className="pt-2 ratting-commnet">
                                 <StarRating rating={comment.ratingcomment} />
                             </div>
@@ -631,20 +571,13 @@ const ProductDetail: React.FC = () => {
                         <div className="px-4 comment-body">
                             <p className="py-2">{comment.content}</p>
                             <div className="py-2 comment-images">
-                                {comment.images &&
-                                    comment.images.length > 0 && (
-                                        <div className="comment-images">
-                                            {comment.images.map(
-                                                (image, index) => (
-                                                    <img
-                                                        key={index}
-                                                        src={image}
-                                                        alt={`Comment image ${index}`}
-                                                    />
-                                                ),
-                                            )}
-                                        </div>
-                                    )}
+                                {comment.images && comment.images.length > 0 && (
+                                    <div className="comment-images">
+                                        {comment.images.map((image, index) => (
+                                            <img key={index} src={image} alt={`Comment image ${index}`} />
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div className="my-2 seller-feedback">
@@ -652,9 +585,7 @@ const ProductDetail: React.FC = () => {
                                 <h4 className="py-2 px-3">
                                     <strong>Phản hồi của người bán</strong>
                                 </h4>
-                                <h4 className="pb-2 px-3">
-                                    {comment.sellerfeedback}
-                                </h4>
+                                <h4 className="pb-2 px-3">{comment.sellerfeedback}</h4>
                             </div>
                         </div>
                     </div>
@@ -689,7 +620,7 @@ const ProductDetail: React.FC = () => {
                 <div className="pt-5 Title-Product-Container">
                     <h3>SẢN PHẨM LIÊN QUAN</h3>
                 </div>
-                <ProductList></ProductList>
+                {/* <ProductList></ProductList> */}
             </div>
         </>
     );

@@ -1,12 +1,13 @@
 import React from 'react';
-import '../Styles/Home.css';
+import '../Styles//Pages/Home.css';
 
 import Header from '../Components/Header';
 import Title from '../Components/Title';
 import CategoryMenu from '../Components/Listitem';
 import Carousel from '../Components/Carousel';
-import ProductList from '../Components/ProductList';
+// import ProductList from '../Components/ProductList';
 import TopSearch from '../Components/TopSearch';
+import Footer from '../Components/footer';
 
 export default function Home() {
     return (
@@ -19,11 +20,11 @@ export default function Home() {
 
             <Carousel></Carousel>
 
-            <div className="Zimara-Mall"></div>
-
             <TopSearch></TopSearch>
+            {/* 
+            <ProductList></ProductList> */}
 
-            <ProductList></ProductList>
+            <Footer></Footer>
         </>
     );
 }

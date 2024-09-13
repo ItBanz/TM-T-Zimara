@@ -1,30 +1,23 @@
 import React from 'react';
+import '../Styles/Components/ProductCard.css';
 
 interface ProductCardProps {
+    title: string;
     image: string;
+    priceDiscount: string; // Giá giảm
     name: string;
-    price: number;
-    purchases: number;
-    onClick: () => void;
+    quantitySold: number;
 }
 
-const ProductCardd: React.FC<ProductCardProps> = ({
-    image,
-    name,
-    price,
-    purchases,
-    onClick,
-}) => {
+const ProductCard: React.FC<ProductCardProps> = ({ title, image, priceDiscount, name, quantitySold }) => {
     return (
-        <div className="product-card" onClick={onClick}>
-            <img src={image} alt={name} className="product-image" />
-            <div className="product-info">
-                <h3 className="product-name">{name}</h3>
-                <p className="product-price">{price.toLocaleString()} VNĐ</p>
-                <p className="product-purchases">Số lượng bán: {purchases}</p>
-            </div>
+        <div className="ProductCardShop">
+            <img src={image} alt={title} className="product-image" />
+            <h3 className="productshop-name">{name}</h3>
+            <p className="productshop-discount">Giá Giảm: {priceDiscount}</p>
+            <p className="productshop-quantity">Số lượng bán: {quantitySold}</p>
         </div>
     );
 };
 
-export default ProductCardd;
+export default ProductCard;

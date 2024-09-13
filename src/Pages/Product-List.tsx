@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Header from '../Components/Header';
-import '../Styles/Product-List.css';
+import '../Styles//Pages/Product-List.css';
 import { useEffect, useState } from 'react';
 import ProductCardAll from '../Components/AllProductCard';
 

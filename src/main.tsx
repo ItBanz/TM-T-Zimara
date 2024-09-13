@@ -8,11 +8,11 @@ import Test from './Pages/Test';
 import ProductDetail from './Pages/ProductDetail';
 import Login from './Pages/Login';
 import ProductListItem from './Pages/Product-List';
+import Shops from './Pages/Shop';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import {
     faShoppingCart,
     faUser,
@@ -32,7 +32,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/Test" element={<Test />}></Route>
-                <Route path="/Product/:id" element={<ProductDetail />} />
+                <Route path="/shop/:id" element={<Shops />}></Route>
+                <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path="/Productlist" element={<ProductListItem />} />
             </Routes>
         </Router>

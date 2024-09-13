@@ -1,0 +1,169 @@
+{
+    "Shops": [
+        {
+            "id": "1",
+            "sName": "Fuzzy Sneaker",
+            "logo": "https://down-vn.img.susercontent.com/file/3b87d408bbcbe092ab38ad2c14c6e6c3_tn",
+            "rating": "14.9",
+            "product": "82",
+            "responseRate": "95%",
+            "joinTime": "16 tháng trước",
+            "followers": "81.5k",
+            "promotionalQuantity": "360",
+            "remainingStock": "70828",
+            "shippingFrom": "Hà Nội",
+            "totalRevenueLastMonth": "305,000,000",
+            "discountCodes": [
+                {
+                    "id-discountCodes": "5",
+                    "name-discountCodes": "Giảm 5k",
+                    "condition-discountCodes": "Đơn hàng tối thiểu 500k",
+                    "date-discountCodes": "30/09/2024",
+                    "quality-discountCodes": "5",
+                    "value-discountCodes": "5,000"
+                },
+                {
+                    "id-discountCodes": "5",
+                    "name-discountCodes": "Giảm 5k",
+                    "condition-discountCodes": "Đơn hàng tối thiểu 500k",
+                    "date-discountCodes": "30/09/2024",
+                    "quality-discountCodes": "5",
+                    "value-discountCodes": "5,000"
+                }
+            ],
+            "categories": [
+                {
+                    "id": "1",
+                    "name": "Zimara",
+                    "subcategories": [
+                        {
+                            "id": "subcat1",
+                            "name": "Giày Dép Nam"
+                        },
+                        {
+                            "id": "subcat2",
+                            "name": "Giày Thể Thao/Sneakers"
+                        }
+                    ]
+                }
+            ],
+            "products": [
+                {
+                    "id-product": 1,
+                    "title-product": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+                    "name": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+                    "image-product": [
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk05gbfc1_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk06v2x1f_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk0kwkbb1_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk089nd14_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lx2rxar1bj6he7_tn"
+                    ],
+                    "rate": 4.5,
+                    "evaluate": "1,7 Đánh Giá",
+                    "selling": "8,7K lượt bán",
+                    "quantitySold": 100,
+                    "returns": 20,
+                    "totalrevenproduct": "82,400,000",
+                    "colorOptions": [
+                        {
+                            "color": "Cream",
+                            "price": "3.000.000",
+                            "pricediscount": "1.030.000",
+                            "sizes": [
+                                { "size": "36", "quality": 20 },
+                                { "size": "37", "quality": 100 },
+                                { "size": "38", "quality": 21 }
+                            ]
+                        },
+                        {
+                            "color": "Creamm",
+                            "price": "3.000.000",
+                            "pricediscount": "1.030.000",
+                            "sizes": [
+                                { "size": "36", "quality": 10 },
+                                { "size": "37", "quality": 100 },
+                                { "size": "38", "quality": 21 }
+                            ]
+                        }
+                    ],
+                    "description": [
+                        "Chào mừng bạn đến vơi FUZZY Shop",
+                        "Cam Kết:-- Đồng kiểm khi nhận hàng -- Đổi trả (sản phẩm còn nguyên tem, tag, box, chưa qua sử dụng)."
+                    ],
+                    "comment": [
+                        {
+                            "id": "1233",
+                            "username": "lekhanggpn50121",
+                            "content": "Sản phẩm y hình. Hộp nguyên vẹn không méo mó. Shop nhiệt tình. Em rất hài lòng về sản phẩm. Sẽ ủng hộ shop lần sau.",
+                            "date": "2024-07-13 00:51",
+                            "ratingcomment": 4,
+                            "images-comment": [
+                                "https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"
+                            ],
+                            "sellerfeedback": "Cảm ơn bạn rất nhiều vì đã dành cho chúng tôi 5 sao! Chúng tôi rất vui khi biết rằng bạn hài lòng với sản phẩm của mình. Mong sớm được phục vụ bạn lần nữa!"
+                        }
+                    ]
+                },
+                {
+                    "id-product": 2,
+                    "title-product": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+                    "name": "[Cam Kết Chính Hãng] Giày Onitsuka Tiger Mexico 66 Đủ Mẫu Mới Nhất Cho Nam và Nữ Hàng Chuẩn Auth-Bao Check",
+                    "image-product": [
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk05gbfc1_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk06v2x1f_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk0kwkbb1_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxr3klk089nd14_tn",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lx2rxar1bj6he7_tn"
+                    ],
+                    "rate": 4.5,
+                    "evaluate": "1,7 Đánh Giá",
+                    "selling": "8,7K lượt bán",
+                    "quantitySold": 150,
+                    "returns": 40,
+                    "totalrevenproduct": "113,300,000",
+                    "discountCodes": ["Giảm 5k", "Giảm 10k", "Giảm 50k", "Giảm 100k"],
+                    "colorOptions": [
+                        {
+                            "color": "Cream",
+                            "price": "3.000.000",
+                            "pricediscount": "1.030.000",
+                            "sizes": [
+                                { "size": "36", "quality": 20 },
+                                { "size": "37", "quality": 100 },
+                                { "size": "38", "quality": 21 }
+                            ]
+                        },
+                        {
+                            "color": "Creamm",
+                            "price": "3.000.000",
+                            "pricediscount": "1.030.000",
+                            "sizes": [
+                                { "size": "36", "quality": 10 },
+                                { "size": "37", "quality": 100 },
+                                { "size": "38", "quality": 21 }
+                            ]
+                        }
+                    ],
+                    "description": [
+                        "Chào mừng bạn đến vơi FUZZY Shop",
+                        "Cam Kết:-- Đồng kiểm khi nhận hàng -- Đổi trả (sản phẩm còn nguyên tem, tag, box, chưa qua sử dụng)."
+                    ],
+                    "comment": [
+                        {
+                            "id": "1233",
+                            "username": "lekhanggpn50121",
+                            "content": "Sản phẩm y hình. Hộp nguyên vẹn không méo mó. Shop nhiệt tình. Em rất hài lòng về sản phẩm. Sẽ ủng hộ shop lần sau.",
+                            "date": "2024-07-13 00:51",
+                            "ratingcomment": 4,
+                            "images-comment": [
+                                "https://down-bs-vn.img.susercontent.com/vn-11134103-7r98o-lxoefq3p9tjtb2.webp"
+                            ],
+                            "sellerfeedback": "Cảm ơn bạn rất nhiều vì đã dành cho chúng tôi 5 sao! Chúng tôi rất vui khi biết rằng bạn hài lòng với sản phẩm của mình. Mong sớm được phục vụ bạn lần nữa!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

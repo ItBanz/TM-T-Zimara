@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGooglePlusG, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import '../Styles/Login.css';
+import '../Styles///Pages/Login.css';
 
 export default function Login() {
     const [isSignUpActive, setIsSignUpActive] = useState(false);
